@@ -1,6 +1,6 @@
-# OOP_1
+# OOP_2
 
-Ex1 of OOP course.
+Ex2 of OOP course.
 
 ## Observer Design Pattern of an UndoableStringBuilder
 
