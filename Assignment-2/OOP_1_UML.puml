@@ -1,0 +1,34 @@
+@startuml
+
+class GroupAdmin{
+UndoableStringBuilder usb
+ArrayList<Member> members
+int count
+updateAll()
+}
+
+class ConcreteMember{
+UndoableStringBuilder usb
+String name
+}
+
+interface Sender{
+register()
+unregister()
+insert()
+append()
+delete()
+undo()
+}
+
+interface Member{
+update()
+}
+
+Sender <|-- GroupAdmin
+Member <|-- ConcreteMember
+
+Member <|- Sender
+ConcreteMember -|> GroupAdmin
+
+@enduml

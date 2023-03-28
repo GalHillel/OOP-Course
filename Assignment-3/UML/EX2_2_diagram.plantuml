@@ -1,0 +1,58 @@
+@startuml
+
+skinparam linetype ortho
+
+interface Callable<V> << interface >> {
+  + call(): V
+}
+interface Comparable<T> << interface >> {
+  + compareTo(T): int
+}
+class CustomExecutor {
+  + CustomExecutor():
+  + submit(Callable<V>, TaskType): Future
+  + submit(Task<V>): Future
+  + gracefullyTerminate(): void
+  + submit(Callable<V>): Future
+   currentMax: int
+}
+class FutureTask<V> {
+  + FutureTask(Callable<V>):
+  + FutureTask(Runnable, V):
+}
+class MyFutureTask<V> {
+  + MyFutureTask(Task<V>):
+  + compareTo(MyFutureTask<V>): int
+}
+class Task<V> {
+  + Task(Callable<V>):
+  + Task(Callable<V>, TaskType):
+  - type: TaskType
+  + call(): V
+  + createTask(Callable<V>, TaskType): Task<V>
+   type: TaskType
+}
+enum TaskType << enumeration >> {
+  - TaskType(int):
+  - validatePriority(int): boolean
+  + valueOf(String): TaskType
+  + values(): TaskType[]
+   priorityValue: int
+   type: TaskType
+   priority: int
+}
+
+MyFutureTask    <-[#595959,dashed]- CustomExecutor
+Task            <-[#595959,dashed]- CustomExecutor
+Callable        <-[#595959,plain]-* FutureTask
+Comparable      ^-[#008200,dashed]- MyFutureTask
+FutureTask      ^-[#000082,plain]-  MyFutureTask
+Task            <-[#595959,plain]-* MyFutureTask
+Callable        ^-[#008200,dashed]- Task
+Callable        <-[#595959,plain]-* Task
+TaskType        <-[#595959,plain]-* Task
+Comparable      ^-[#008200,dashed]- TaskType
+
+
+
+@enduml

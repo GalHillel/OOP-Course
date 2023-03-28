@@ -1,0 +1,36 @@
+@startuml
+
+top to bottom direction
+skinparam linetype ortho
+
+interface Callable<V> {
+  + call(): V
+}
+class EX2_1 {
+  + EX2_1()
+  + createTextFiles(int, int, int): String[]
+  + getNumOfLinesThreads(String[]): int
+  + deleteAllFiles(String[]): void
+  + getNumOfLinesThreadPool(String[]): int
+  + getNumOfLines(String[]): int
+  + main(String[]): void
+}
+class LineCounter {
+  + LineCounter(String)
+  - numLines: int
+  + run(): void
+   numLines: int
+}
+class LineCounterPool {
+  + LineCounterPool(String)
+  + call(): Integer
+}
+class Thread {
+  + run(): void
+}
+
+LineCounter      +-[#820000,plain,bold]-  EX2_1
+LineCounter      -[#000082,plain,bold]-^  Thread
+LineCounterPool  -[#008200,dashed,bold]-^  Callable
+LineCounterPool  +-[#820000,plain,bold]-  EX2_1
+@enduml

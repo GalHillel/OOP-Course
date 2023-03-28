@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="2103.5" y="2565.0">java.lang.Thread.Caches</node>
+    <node x="670.5" y="2553.5">java.lang.Thread.ThreadIdentifiers</node>
+    <node x="775.5" y="2861.0">java.lang.Thread.Builder.OfVirtual</node>
+    <node x="1065.0" y="-117.5">java.lang.Thread</node>
+    <node x="1913.5" y="2542.5">java.lang.Thread.State</node>
+    <node x="-97.0" y="2553.5">EX2_1.LineCounterPool</node>
+    <node x="1190.0" y="2806.0">java.lang.Thread.Builder.OfPlatform</node>
+    <node x="298.0" y="2565.0">java.lang.Thread.FieldHolder</node>
+    <node x="1774.5" y="2565.0">java.lang.Thread.Constants</node>
+    <node x="115.0" y="2530.5">EX2_1.LineCounter</node>
+    <node x="1160.0" y="2488.0">java.lang.Thread.Builder</node>
+    <node x="64.0" y="1038.5">EX2_1</node>
+    <node x="851.5" y="2565.0">java.lang.Thread.UncaughtExceptionHandler</node>
+    <node x="1566.0" y="2553.5">java.lang.Thread.ThreadNumbering</node>
+    <node x="-94.5" y="1105.0">java.util.concurrent.Callable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.lang.Thread.Builder.OfPlatform" target="java.lang.Thread.Builder" relationship="INTERFACE_GENERALIZATION">
+      <point x="100.0" y="-126.0" />
+      <point x="1493.0" y="2752.0" />
+      <point x="1453.0" y="2752.0" />
+      <point x="100.0" y="104.0" />
+    </edge>
+    <edge source="EX2_1.LineCounter" target="EX2_1" relationship="INNER_CLASS">
+      <point x="-40.0" y="-61.5" />
+      <point x="-40.0" y="93.5" />
+    </edge>
+    <edge source="EX2_1.LineCounter" target="java.lang.Thread" relationship="GENERALIZATION">
+      <point x="38.666666666666686" y="-61.5" />
+      <point x="231.66666666666669" y="2452.0" />
+      <point x="1161.0" y="2452.0" />
+      <point x="-92.0" y="1249.5" />
+    </edge>
+    <edge source="java.lang.Thread.Constants" target="java.lang.Thread" relationship="INNER_CLASS">
+      <point x="0.0" y="-27.0" />
+      <point x="1833.0" y="2472.0" />
+      <point x="1353.0" y="2472.0" />
+      <point x="100.0" y="1249.5" />
+    </edge>
+    <edge source="java.lang.Thread.Builder" target="java.lang.Thread" relationship="INNER_CLASS">
+      <point x="0.0" y="-104.0" />
+      <point x="100.0" y="1249.5" />
+    </edge>
+    <edge source="java.lang.Thread.UncaughtExceptionHandler" target="java.lang.Thread" relationship="INNER_CLASS">
+      <point x="0.0" y="-27.0" />
+      <point x="993.0" y="2472.0" />
+      <point x="1353.0" y="2472.0" />
+      <point x="100.0" y="1249.5" />
+    </edge>
+    <edge source="java.lang.Thread.Builder.OfPlatform" target="java.lang.Thread.Builder" relationship="INNER_CLASS">
+      <point x="-100.0" y="-126.0" />
+      <point x="1293.0" y="2772.0" />
+      <point x="1253.0" y="2772.0" />
+      <point x="-100.0" y="104.0" />
+    </edge>
+    <edge source="java.lang.Thread.ThreadIdentifiers" target="java.lang.Thread" relationship="INNER_CLASS">
+      <point x="0.0" y="-38.5" />
+      <point x="753.0" y="2472.0" />
+      <point x="1353.0" y="2472.0" />
+      <point x="100.0" y="1249.5" />
+    </edge>
+    <edge source="EX2_1.LineCounterPool" target="java.util.concurrent.Callable" relationship="REALIZATION">
+      <point x="-40.0" y="-38.5" />
+      <point x="-20.0" y="27.0" />
+    </edge>
+    <edge source="EX2_1.LineCounterPool" target="EX2_1" relationship="INNER_CLASS">
+      <point x="46.666666666666686" y="-38.5" />
+      <point x="39.666666666666686" y="2512.0" />
+      <point x="153.0" y="2512.0" />
+      <point x="-40.0" y="93.5" />
+    </edge>
+    <edge source="java.lang.Thread.ThreadNumbering" target="java.lang.Thread" relationship="INNER_CLASS">
+      <point x="0.0" y="-38.5" />
+      <point x="1653.0" y="2472.0" />
+      <point x="1353.0" y="2472.0" />
+      <point x="100.0" y="1249.5" />
+    </edge>
+    <edge source="java.lang.Thread.State" target="java.lang.Thread" relationship="INNER_CLASS">
+      <point x="0.0" y="-49.5" />
+      <point x="1993.0" y="2472.0" />
+      <point x="1353.0" y="2472.0" />
+      <point x="100.0" y="1249.5" />
+    </edge>
+    <edge source="java.lang.Thread.Builder.OfVirtual" target="java.lang.Thread.Builder" relationship="INTERFACE_GENERALIZATION">
+      <point x="98.75" y="-71.0" />
+      <point x="1071.75" y="2752.0" />
+      <point x="1453.0" y="2752.0" />
+      <point x="100.0" y="104.0" />
+    </edge>
+    <edge source="java.lang.Thread.FieldHolder" target="java.lang.Thread" relationship="INNER_CLASS">
+      <point x="0.0" y="-27.0" />
+      <point x="473.0" y="2472.0" />
+      <point x="1353.0" y="2472.0" />
+      <point x="100.0" y="1249.5" />
+    </edge>
+    <edge source="java.lang.Thread.Caches" target="java.lang.Thread" relationship="INNER_CLASS">
+      <point x="0.0" y="-27.0" />
+      <point x="2153.0" y="2472.0" />
+      <point x="1353.0" y="2472.0" />
+      <point x="100.0" y="1249.5" />
+    </edge>
+    <edge source="java.lang.Thread.Builder.OfVirtual" target="java.lang.Thread.Builder" relationship="INNER_CLASS">
+      <point x="-98.75" y="-71.0" />
+      <point x="874.25" y="2772.0" />
+      <point x="1253.0" y="2772.0" />
+      <point x="-100.0" y="104.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.16113892365456822" showDependencies="false" x="1063.0" y="1480.0" />
+  <SelectedNodes>
+    <node>java.lang.Thread</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
